@@ -18,7 +18,7 @@
       </mat-form-field>
     </form>
     <div class="buttons-container">
-      <button class="login-button" mat-raised-button [disabled]="loginForm.invalid">Login</button>
+      <button class="login-button" mat-raised-button (click)="login()" [disabled]="loginForm.invalid">Login</button>
       <p>OR</p>
       <button routerLink="/create-account" mat-button>Create account</button>
     </div>

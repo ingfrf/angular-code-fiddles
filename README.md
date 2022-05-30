@@ -9,6 +9,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 ## Tecnologías
 * Angular Material
 * Reactive form con FormBuilder y su nueva forma de acceder
+* webservices contra NestJs y MongoDb
 
 ## Code scaffolding
 

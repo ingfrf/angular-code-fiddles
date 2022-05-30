@@ -10,8 +10,11 @@ import {LoginComponent} from './pages/login/login.component';
 import {MatButtonModule} from '@angular/material/button';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
-import { CreateAccountComponent } from './pages/create-account/create-account.component';
+
+import {CreateAccountComponent} from './pages/create-account/create-account.component';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import {HttpClientModule} from "@angular/common/http";
+import { HomeComponent } from './pages/home/home.component';
 
 
 @NgModule({
@@ -19,7 +22,8 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
     AppComponent,
     TopbarComponent,
     LoginComponent,
-    CreateAccountComponent
+    CreateAccountComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +33,8 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
     MatFormFieldModule,
     MatInputModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
