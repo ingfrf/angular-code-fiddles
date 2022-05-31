@@ -10,6 +10,8 @@ import {LoginComponent} from './pages/login/login.component';
 import {MatButtonModule} from '@angular/material/button';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
+import {MatMenuModule} from '@angular/material/menu';
+import {MatIconModule} from '@angular/material/icon';
 
 import {CreateAccountComponent} from './pages/create-account/create-account.component';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
@@ -32,6 +34,8 @@ import { HomeComponent } from './pages/home/home.component';
     MatButtonModule,
     MatFormFieldModule,
     MatInputModule,
+    MatMenuModule,
+    MatIconModule,
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule

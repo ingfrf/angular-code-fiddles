@@ -9,7 +9,8 @@ import {Router} from "@angular/router";
 })
 export class TopbarComponent implements OnInit {
 
-  constructor(private userService: UserService, private router: Router) { }
+  constructor(private userService: UserService, private router: Router) {
+  }
 
   ngOnInit(): void {
     // TODO mejor con AuthGuard que chequeando un elemento común que se recargue cada vez que se cambia la ruta
@@ -21,5 +22,15 @@ export class TopbarComponent implements OnInit {
         this.router.navigate(['/login']);
       }
     }
+  }
+
+  public getUser() {
+    return this.userService.user;
+  }
+
+  logout() {
+    this.userService.user = undefined;
+    localStorage.clear();
+    this.router.navigate(['login']);
   }
 }
